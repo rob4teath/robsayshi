@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System;
 
-namespace robsayshi
+namespace Leetcode
 {
     class Program
     {
@@ -12,7 +12,7 @@ namespace robsayshi
             keys.Add(new List<int>() { 3, 2, 1 });
             keys.Add(new List<int>() { 2 });
             keys.Add(new List<int>() { });
-            var testObj = new Solution();
+            var testObj = new KeysAndRooms.Solution();
             Console.WriteLine(testObj.CanVisitAllRooms(keys));
         }
     }
