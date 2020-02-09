@@ -7,11 +7,17 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
+            TrappingRainWater();
             CoinChange2();
             KeysAndRooms();
             ScoreOfParentheses();
         }
         
+        static void TrappingRainWater() {
+            Console.WriteLine("42. Trapping Rain Water");
+            var testObj = new TrappingRainWater.Solution();
+            Console.WriteLine(testObj.Trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
+        }
 
         static void CoinChange2() {
             Console.WriteLine("518. Coin Change 2");

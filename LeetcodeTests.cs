@@ -12,9 +12,18 @@ namespace Leetcode
         }
 
         [Test]
-        [TestCase(10, new int[]{2, 3}, ExpectedResult = 2)]
-        [TestCase(500, new int[]{3, 5, 7, 8, 9, 10, 11}, ExpectedResult = 35502874)]
-        public int CoinChange2Test(int amount, int[] coins) {
+        [TestCase(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 }, ExpectedResult = 6)]
+        public int TrappingRainWaterTest(int[] height)
+        {
+            var testObj = new TrappingRainWater.Solution();
+            return testObj.Trap(height);
+        }
+
+        [Test]
+        [TestCase(10, new int[] { 2, 3 }, ExpectedResult = 2)]
+        [TestCase(500, new int[] { 3, 5, 7, 8, 9, 10, 11 }, ExpectedResult = 35502874)]
+        public int CoinChange2Test(int amount, int[] coins)
+        {
             var testObj = new CoinChange2.Solution();
             return testObj.Change(amount, coins);
         }
