@@ -7,9 +7,19 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
+            CoinChange2();
             KeysAndRooms();
             ScoreOfParentheses();
         }
+        
+
+        static void CoinChange2() {
+            Console.WriteLine("518. Coin Change 2");
+            var testObj = new CoinChange2.Solution();
+            Console.WriteLine(testObj.Change(10, new int[]{2, 3}));
+            Console.WriteLine(testObj.Change(500, new int[]{3, 5, 7, 8, 9, 10, 11}));
+        }
+
         static void KeysAndRooms()
         {
             Console.WriteLine("841. Keys And Rooms");
